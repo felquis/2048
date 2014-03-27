@@ -60,7 +60,7 @@ h1.title {
 }
 
 .scores-container {
-  float: right;
+  float: left;
   text-align: right;
 }
 
@@ -226,9 +226,9 @@ hr {
         margin-left: 9px;
         // margin-top: 59px;
 
-	&.keep-playing-button {
-	  display: none;
-	}
+  &.keep-playing-button {
+    display: none;
+  }
       }
 
       @include animation(fade-in 800ms ease $transition-speed * 12);
@@ -238,9 +238,9 @@ hr {
         background: rgba($tile-gold-color, .5);
         color: $bright-text-color;
 
-	a.keep-playing-button {
-	  display: inline-block;
-	}
+  a.keep-playing-button {
+    display: inline-block;
+  }
       }
 
       &.game-won, &.game-over {
@@ -455,6 +455,11 @@ hr {
   @include clearfix;
 }
 
+.game-copyrights {
+  font-size: 11px;
+  line-height: 100%;
+}
+
 .game-intro {
   float: left;
   line-height: 42px;
@@ -466,6 +471,7 @@ hr {
   display: block;
   text-align: center;
   float: right;
+  margin: 8px 0 0 0;
 }
 
 .game-explanation {
