@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
+  <title>A Web Component wrapper for 2048 game!</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -19,6 +19,7 @@
   <link rel="import" href="x-2048.html">
 </head>
 <body>
+  <div id="fb-root"></div>
   <div class="container">
     <div class="heading">
       <h1 class="title">&lt;x-2048&gt;</h1>
@@ -29,6 +30,30 @@
     </div>
 
     <x-2048></x-2048>
+
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="felquis" data-related="felquis">Tweet</a>
+
+    <div class="g-plusone" data-size="medium" data-href="http://felquis.github.io/x-2048/"></div>
+
+    <div class="fb-like" data-href="http://felquis.github.io/x-2048/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="top: -6px;"></div>
+    
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=437603592993249";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!-- <p>
     Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
