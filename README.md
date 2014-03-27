@@ -1,4 +1,4 @@
-# <x-2048>
+# &lt;x-2048&gt;
 Web Component wrapper for 2048 game
 
 [Original repository](https://github.com/gabrielecirulli/2048)
