@@ -19,6 +19,12 @@ Web Component wrapper for 2048 game, [check out the demo!](http://felquis.github
     <link rel="import" href="bower_components/x-2048/x-2048.html">
     ```
 
+    **Note:** Remember! You need to call Polymer before import the x-2048 component
+    ```html
+    <!-- Importing Web Component's Polyfill -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
+    ```
+
 4. Start using it!
 
     ```xml
